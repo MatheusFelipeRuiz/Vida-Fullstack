@@ -1,0 +1,119 @@
+@import "variaveis.scss";
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('../img/bolha-background.png');
+    background-position: center ;
+}
+
+
+/* Estilização Header/NAV */
+
+header {
+    display:flex;
+    justify-content:space-between;
+    background-color: $bg-div;
+    padding: 3em 10em;
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style-type: none;
+            background-color: $bg-div;
+            display:flex;
+            align-items:baseline;
+            justify-content:space-around;
+            li {
+                margin: 0 1.2em;
+                transition: all .1s ease-in-out;
+                a {
+                    font-size: 20px;
+                    color:$cor-li;
+                    text-decoration:none;
+                }
+                &:hover {
+                    border-bottom: 3px solid $cor-quente;
+                    border-radius: 2px;
+                }
+            }
+
+        }
+    }
+}
+
+
+/* Estilização Main */
+
+
+.button {
+    cursor:pointer;
+    color:#fff;
+    padding: 0.2em 1.4em;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin: 0 1.2em;
+    font-size: 20px;
+    background: $cor-quente;
+}
+
+
+/* ### Main */
+.main {
+    display:flex;
+    justify-content: center;
+    padding: 0 4em;
+    section {
+        padding: 2em 1em;
+        width: 300px;
+        h1 {
+            font-size: 70px;
+            color: $cor-h1;
+            font-weight: 400;
+            line-height: 60px;
+        }
+        article {
+            width: 300px;
+            height: 400px;
+            
+            h2 {
+                color:$cor-h2;
+                padding: 0.4em 0;
+                font-size: 40px;
+                font-weight: 300;
+                text-transform:uppercase;
+            }
+
+            p {
+                font-size: 17px;
+                margin: 1em 0;
+                color: $cor-texto;
+            }
+
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    margin:0 0 2em 4em;
+    padding: 0 4em;
+    height: 100px;
+    width: 400px;
+    nav {
+        ul {
+            display:flex;
+            justify-content: space-between;
+            list-style-type: none;
+            li {
+                cursor:pointer;
+
+            }
+        }
+    }
+}
